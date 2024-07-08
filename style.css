@@ -1,0 +1,217 @@
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    -webkit-font-smoothing: antialiased;
+}
+
+:root {
+    --primaryColor: rgb(29, 221, 189);
+    --secondaryColor: rgb(0, 59, 50);
+    --textColor: rgb(250, 250, 250);
+    --bgColor: rgb(12, 12, 12);
+    --bgLightColor: rgb(190, 181, 181);
+}
+
+a:hover{
+    color: var(--primaryColor)!important;
+}
+
+.btn-primary{
+    background-color: var(--primaryColor);
+    color: var(--textColor);
+    border-color: var(--primaryColor);
+}
+
+.btn-primary:hover{
+    background-color: transparent;
+    border: 2px solid var(--primaryColor);
+
+}
+
+.btn-outline-primary{
+    color: var(--primaryColor);
+    border-color: var(--primaryColor);
+}
+
+.btn-outline-primary:hover{
+    color: var(--bgColor);
+    background-color: var(--primaryColor);
+    border: 2px solid var(--primaryColor);
+}
+
+.primary-color{
+    color: var(--primaryColor);
+}
+
+/* Header / Nav Section */
+
+header{
+    background-color: var(--bgColor);
+}
+
+header .nav-link{
+    font-size: 15px;
+    font-weight: 200;
+    text-decoration: none;
+    margin-right: 1.5rem;
+    text-transform: uppercase;
+    transition: all .2s ease;
+}
+
+
+/* Hero / Top Section */
+
+#hero{
+    min-height: 100dvh;
+    color: var(--textColor);
+    background-color: var(--bgColor);
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 73% 94%, 0 100%);
+}
+
+#hero h2{
+    font-weight: 100;
+    line-height: 1.2;
+}
+
+
+#hero .portrait img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+}
+
+#hero .desc{
+    color: var(--bgLightColor);
+    line-height: 1.9;
+}
+
+/* About Section */
+
+#about{
+    min-height: 100dvh;
+    color: var(--bgColor);
+}
+
+.about .portrait img {
+    width: 280px;
+    height: 280px;
+    object-fit: cover;
+    border: 3px dotted var(--primaryColor);
+}
+
+.about .portrait img:hover{
+    transition: all 0.4s;
+    border: 3px solid var(--bgColor);
+}
+
+#about .desc{
+    color: var(--bgLightColor);
+}
+
+#about i{
+    font-size: 25px;
+    color: var(--primaryColor);
+    margin-right: 1rem;
+}
+
+/* Skills Section */
+
+#skills{
+    background-color: var(--bgColor);
+    min-height: 100dvh;
+}
+
+#skills .desc{
+    color: var(--textColor);
+}
+
+
+#skills img {
+    width: 60px;
+    position: absolute;
+    top: -1.8rem;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: inherit;
+    padding: 10px;
+}
+
+#skills .card:hover{
+    background-color: var(--primaryColor);
+    color: var(--bgColor);
+    transition: all .2s ease;
+}
+
+/* Education Section */
+
+#education{
+    min-height: 100dvh;
+}
+
+#education .desc{
+    color: var(--bgColor);
+}
+
+.education-item {
+    display: flex;
+    align-items: center;
+}
+
+.education-item .education-img {
+    flex: 1;
+    max-width: 150px;
+    margin-right: 20px;
+}
+
+.education-item .education-img img {
+    max-width: 100%;
+    border-radius: 50%;
+}
+
+.education-item .education-details {
+    flex: 3;
+}
+
+.education-item h2 {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.education-item p {
+    color: #555;
+    margin-bottom: 5px;
+}
+
+
+/* Contact Section */
+
+#contact{
+    background-color: var(--bgColor);
+    min-height: 100dvh;
+}
+
+#contact .desc{
+    color: var(--textColor);
+}
+
+#contact form label{
+    color: var(--textColor);
+}
+
+#contact button{
+    font-weight: bold;
+}
+
+#contact textarea{
+    resize: none;
+}
+
+/* Footer Section */
+
+footer{
+    background-color: #66ffcc#66ffcc;
+    background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);
+}
